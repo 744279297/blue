@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.statistics.StatisticsActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="搜索蓝牙"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_auto"
+        android:orderInCategory="100"
+        android:title="自动模式"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_handle"
+        android:orderInCategory="100"
+        android:title="手动模式"
+        app:showAsAction="never" />
+</menu>

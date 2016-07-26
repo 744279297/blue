@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/now"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/now_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="当前液位"
+            android:textColor="@color/waterColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/now_water_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0cc"
+            android:textColor="@color/waterColor"
+            android:textSize="30sp"
+            android:layout_below="@+id/now_water"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/now"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/today_record_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:text="今日记录"
+            android:textColor="@color/waterColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/today_record_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/today_record_text"
+            android:layout_toLeftOf="@+id/today_record_text"
+            android:layout_toStartOf="@+id/today_record_text"
+            android:text="低：15%"
+            android:textColor="@color/waterColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/today_record_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/today_record_text"
+            android:layout_toEndOf="@+id/today_record_text"
+            android:layout_toRightOf="@+id/today_record_text"
+            android:text="高：75%"
+            android:textColor="@color/waterColor"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
